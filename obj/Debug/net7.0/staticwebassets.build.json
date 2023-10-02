@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "7KtFnH+fAYcHvLLo+PPMAbdncdjVxlcq4sG6Wy6U2K8=",
+  "Source": "myForum",
+  "BasePath": "_content/myForum",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "myForum/wwwroot",
+      "Source": "myForum",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/html/login.html",
+      "SourceId": "myForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "RelativePath": "html/login.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/html/login.html"
+    },
+    {
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/index.html",
+      "SourceId": "myForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

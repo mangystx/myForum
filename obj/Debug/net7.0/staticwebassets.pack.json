@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/html/login.html",
+      "PackagePath": "staticwebassets/html/login.html"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.myForum.props",
+      "PackagePath": "build\\myForum.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.myForum.props",
+      "PackagePath": "buildMultiTargeting\\myForum.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.myForum.props",
+      "PackagePath": "buildTransitive\\myForum.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.myForum.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
