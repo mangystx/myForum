@@ -13,4 +13,16 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\css\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\myForum.Dal\myForum.Dal.csproj" />
+    </ItemGroup>
+
 </Project>
