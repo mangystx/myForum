@@ -64,3 +64,5 @@
 /Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/obj/Debug/net7.0/myForum.pdb
 /Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/obj/Debug/net7.0/myForum.genruntimeconfig.cache
 /Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/obj/Debug/net7.0/ref/myForum.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/myForum.Dal.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/myForum.Dal.pdb

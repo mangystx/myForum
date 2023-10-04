@@ -22,14 +22,8 @@ var app = builder.Build();
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseStaticFiles();
 app.UseDefaultFiles();
-
-app.MapGet("/signUp", async context =>
-{
-    context.Response.ContentType = "text/html; charset=utf-8";
-    await context.Response.WriteAsync(File.ReadAllText("wwwroot/html/signUp.html"));
-});
+app.UseStaticFiles();
 
 app.MapPost("/signUp", async (HttpContext context) =>
 {
@@ -63,13 +57,7 @@ app.MapPost("/signUp", async (HttpContext context) =>
 
     await context.SignInAsync(
         new ClaimsPrincipal(new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme)));
-    return Results.Redirect("/");
-});
-
-app.MapGet("/login", async context =>
-{
-    context.Response.ContentType = "text/html; charset=utf-8";
-    await context.Response.WriteAsync(File.ReadAllText("wwwroot/html/login.html"));
+    return Results.Redirect("/", preserveMethod: true);
 });
 
 app.MapPost("/login", async (string? returnUrl, HttpContext context) =>
@@ -92,8 +80,8 @@ app.MapPost("/login", async (string? returnUrl, HttpContext context) =>
     string password = form["password"];
     if (userName == "Admin") return Results.Redirect("/accessdenied");
     User? user = dbContext.Users.FirstOrDefault(u => u.Name == userName && u.Password == password);
-    if (user is null) Results.Unauthorized();
-
+    if (user is null) return Results.Unauthorized();
+    
     var claims = new List<Claim>
     {
         new (ClaimTypes.Name, userName),
@@ -107,8 +95,8 @@ app.MapPost("/login", async (string? returnUrl, HttpContext context) =>
 
 app.MapGet("/accessdenied", async (HttpContext context) =>
 {
-    context.Response.StatusCode = 403;
-    await context.Response.WriteAsync("Access Denied");
+    context.Response.ContentType = "text/html";
+    await context.Response.WriteAsync("<h1>Access Denied</h1>");
 });
 
 app.MapGet("/logout", async context =>

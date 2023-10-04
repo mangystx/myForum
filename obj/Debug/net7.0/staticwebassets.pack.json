@@ -1,12 +1,28 @@
 {
   "Files": [
     {
-      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/html/login.html",
-      "PackagePath": "staticwebassets/html/login.html"
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/nullstyle.css",
+      "PackagePath": "staticwebassets/css/nullstyle.css"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/header/headerbackground.jpg",
+      "PackagePath": "staticwebassets/img/header/headerbackground.jpg"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/mb.png",
+      "PackagePath": "staticwebassets/img/mb.png"
     },
     {
       "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/js/login&registerScript.js",
+      "PackagePath": "staticwebassets/js/login&registerScript.js"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.myForum.props",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7KtFnH+fAYcHvLLo+PPMAbdncdjVxlcq4sG6Wy6U2K8=",
+  "Hash": "GMhDW6FCDERCbnUvp/miUnRiStuUYp8Rn084INJTZaw=",
   "Source": "myForum",
   "BasePath": "_content/myForum",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/html/login.html",
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/nullstyle.css",
       "SourceId": "myForum",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
       "BasePath": "_content/myForum",
-      "RelativePath": "html/login.html",
+      "RelativePath": "css/nullstyle.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,58 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/html/login.html"
+      "OriginalItemSpec": "wwwroot/css/nullstyle.css"
+    },
+    {
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/style.css",
+      "SourceId": "myForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/header/headerbackground.jpg",
+      "SourceId": "myForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "RelativePath": "img/header/headerbackground.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/header/headerbackground.jpg"
+    },
+    {
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/mb.png",
+      "SourceId": "myForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "RelativePath": "img/mb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/mb.png"
     },
     {
       "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/index.html",
@@ -49,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/js/login&registerScript.js",
+      "SourceId": "myForum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/",
+      "BasePath": "_content/myForum",
+      "RelativePath": "js/login&registerScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/login&registerScript.js"
     }
   ]
 }
