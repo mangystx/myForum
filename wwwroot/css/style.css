@@ -225,7 +225,7 @@ header {
     font-size: 1em;
     color: #162938;
     font-weight: 600;
-    padding: 0 35px 0px 5px;
+    padding: 0 35px 0 5px;
 }
 
 .input-box input:focus ~ label,
@@ -283,15 +283,30 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 40px 10px 0 10px;
+    padding: 40px 10px 30px 10px;
 }
 
 .article-preview {
     flex: 1 0 300px;
     height: 200px;
     max-width: 900px;
-    background: #544c4c;
-    margin: 20px
+    background: #564646;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #f69005;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    transition: 0.18s, transform 0.3s ease;
+}
+
+.article-preview:hover {
+    background: #807777;
+    transform: scale(1.1);
 }
 
 footer {
@@ -300,21 +315,26 @@ footer {
     font-size: 14px;
     text-align: center;
 }
+
 footer a {
     display: block;
 }
+
 footer .logo {
     margin: 25px 0 40px 0;
 }
+
 footer .links {
     display: flex;
     justify-content: center;
     margin: 0 0 34px 0;
 }
+
 footer .link {
     color: #a4a4a4;
     margin: 0 11.5px;
 }
+
 footer .mark {
     margin-bottom: 12px;
     color: #6c6c6c;

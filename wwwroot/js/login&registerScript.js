@@ -6,13 +6,21 @@ const iconClose = document.querySelector('.icon-close');
 const form = document.querySelector('form');
 const articlesLink = document.querySelector('.articles-link');
 const contactLink = document.querySelector('.contact-link');
+const scrollHeaders = document.querySelectorAll('.scroll-header');
 
-articlesLink.addEventListener('click', function(event) {
+scrollHeaders.forEach(header => {
+	header.addEventListener('click', event => {
+		event.preventDefault();
+		document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+	});
+});
+
+articlesLink.addEventListener('click', event => {
 	event.preventDefault();
 	document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
 });
 
-contactLink.addEventListener('click', function(event) {
+contactLink.addEventListener('click', event => {
 	event.preventDefault();
 	document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
 });
@@ -33,10 +41,8 @@ iconClose.addEventListener('click', () => {
 	wrapper.classList.remove('active-login-menu');
 });
 
-form.addEventListener('submit', async (e) => {
-	console.log("in submit");
-	e.preventDefault();
-	console.log("after prevent");
+form.addEventListener('submit', async event => {
+	event.preventDefault();
 	const formData = new FormData(form);
 	const response = await fetch(form.action, {
 		method: 'POST',
@@ -44,24 +50,20 @@ form.addEventListener('submit', async (e) => {
 	});
 	
 	if (response.ok || response.redirected) {
-		console.log("in response ok");
 		btnLogin.classList.remove('btn-login');
 		btnLogin.classList.add('btn-logout');
 		wrapper.classList.remove('active-login-menu');
 	} else if (response.status === 401) {
-		console.log("in 401");
 		const errorMessage = document.querySelector('.register-error-message');
 		errorMessage.textContent = "This user does not exist";
 		wrapper.classList.add('active');
 	} else {
-		console.log("in error");
 		const error = await response.text();
 		console.error(`HTTP Error: ${response.status} - ${error}`);
 	}
-	console.log("end");
 });
 
-document.addEventListener('click', async (event) => {
+document.addEventListener('click', async event => {
 	const btnLogout = event.target.closest('.btn-logout');
 	if (btnLogout) {
 		const response = await fetch('/logout', {

@@ -27,11 +27,9 @@ app.UseStaticFiles();
 
 app.MapPost("/signUp", async (HttpContext context) =>
 {
-    Console.WriteLine("in sighUp");
     var form = context.Request.Form;
     if (!form.ContainsKey("userName") || !form.ContainsKey("password"))
     {
-        Console.WriteLine("in no contais");
         string message = String.Empty;
         if (!form.ContainsKey("userName") && !form.ContainsKey("password"))
         {
@@ -45,7 +43,6 @@ app.MapPost("/signUp", async (HttpContext context) =>
 
     string userName = form["userName"];
     string password = form["password"];
-    Console.WriteLine("after no contains");
     if (dbContext.Users.Any(u => u.Name == userName)) return Results.BadRequest("User already exists");
     User user = new User { Name = userName, Role = userRole, Password = password };
     dbContext.Users.Add(user);
@@ -59,7 +56,6 @@ app.MapPost("/signUp", async (HttpContext context) =>
 
     await context.SignInAsync(
         new ClaimsPrincipal(new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme)));
-    Console.WriteLine("after signIn");
     return Results.Redirect("/");
 });
 
