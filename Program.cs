@@ -60,7 +60,7 @@ app.MapPost("/signUp", async (HttpContext context) =>
     await context.SignInAsync(
         new ClaimsPrincipal(new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme)));
     Console.WriteLine("after signIn");
-    return Results.Redirect("/", preserveMethod: true);
+    return Results.Redirect("/");
 });
 
 app.MapPost("/login", async (string? returnUrl, HttpContext context) =>
