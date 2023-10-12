@@ -1,12 +1,52 @@
 {
   "Files": [
     {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/articleStyle.css",
+      "PackagePath": "staticwebassets/css/articleStyle.css"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/createArticleStyle.css",
+      "PackagePath": "staticwebassets/css/createArticleStyle.css"
+    },
+    {
       "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/nullstyle.css",
       "PackagePath": "staticwebassets/css/nullstyle.css"
     },
     {
       "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/css/style.css",
       "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/html/article.html",
+      "PackagePath": "staticwebassets/html/article.html"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/html/createArticle.html",
+      "PackagePath": "staticwebassets/html/createArticle.html"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/article/background.png",
+      "PackagePath": "staticwebassets/img/article/background.png"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/article/gate-left.png",
+      "PackagePath": "staticwebassets/img/article/gate-left.png"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/article/gate-right.png",
+      "PackagePath": "staticwebassets/img/article/gate-right.png"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/article/grass.png",
+      "PackagePath": "staticwebassets/img/article/grass.png"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/article/tree-left.png",
+      "PackagePath": "staticwebassets/img/article/tree-left.png"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/article/tree-right.png",
+      "PackagePath": "staticwebassets/img/article/tree-right.png"
     },
     {
       "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/img/header/headerbackground.jpg",
@@ -19,6 +59,14 @@
     {
       "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/js/articleScript.js",
+      "PackagePath": "staticwebassets/js/articleScript.js"
+    },
+    {
+      "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/js/createArticleScript.js",
+      "PackagePath": "staticwebassets/js/createArticleScript.js"
     },
     {
       "Id": "/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/wwwroot/js/login&registerScript.js",

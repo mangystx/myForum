@@ -18,27 +18,24 @@ main {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 120vh;
     background-image: url("../img/header/headerbackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .head {
-    left: 0;
-    top: 0;
-    position: fixed;
     width: 100%;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
 }
+
 
 .logo {
     font-size: 2em;
@@ -120,6 +117,7 @@ header {
 }
 
 .wrapper {
+    margin: 100px auto 20px auto;
     position: relative;
     width: 400px;
     height: 440px;
@@ -289,11 +287,11 @@ main {
 .article-preview {
     flex: 1 0 300px;
     height: 200px;
-    max-width: 900px;
+    max-width: 500px;
     background: #564646;
     margin: 20px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 14px;
     overflow: hidden;
     font-size: 16px;
     font-weight: 400;
@@ -307,6 +305,12 @@ main {
 .article-preview:hover {
     background: #807777;
     transform: scale(1.1);
+}
+
+.article-preview h3 {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
 }
 
 footer {
@@ -338,4 +342,21 @@ footer .link {
 footer .mark {
     margin-bottom: 12px;
     color: #6c6c6c;
+}
+
+.add-article-container {
+    text-align: right;
+    margin-bottom: 25px;
+    align-self: flex-end;
+}
+
+.add-article {
+    color: #ffffff;
+    font-size: 4em;
+    transition: 0.5s;
+    margin-right: 35px;
+}
+
+.add-article:hover {
+    color: #1dd700;
 }

@@ -66,3 +66,10 @@
 /Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/obj/Debug/net7.0/ref/myForum.dll
 /Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/myForum.Dal.dll
 /Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/myForum.Dal.pdb
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/Apache.Arrow.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/OpenAI.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/OpenAI.Utilities.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/CsvHelper.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/MathNet.Numerics.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/Microsoft.Data.Analysis.dll
+/Users/andrijmarcenko/RiderProjects/ASPEmpty/myForum/bin/Debug/net7.0/Microsoft.ML.DataView.dll

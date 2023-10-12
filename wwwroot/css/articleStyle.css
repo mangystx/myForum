@@ -1,0 +1,135 @@
+@import url('https://fonts .googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "nullstyle.css";
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header a{
+    font-size: 2em;
+    color: #fff;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background: url("../img/article/background.png") no-repeat fixed center;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none ;
+}
+
+.parallax img#gate-left {
+    position: fixed;
+    transform: translateX(-282px);
+}
+
+ .parallax img#gate-right {
+     position: fixed;
+     transform: translateX(305px);
+ }
+
+#title {
+    position: absolute;
+    font-size: 5em;
+    color: #1b283a;
+    text-shadow: 2px 4px 5px #f9f9f9;
+    font-weight: 600;
+}
+
+.sec {
+    position: relative;
+    background: #020912;
+    padding: 30px 100px;
+}
+
+.sec p{ 
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 27px;
+}
+
+.btn-container {
+    position: fixed;
+    top: 15px;
+    z-index: 100;
+    right: 15px;
+}
+
+.btn-delete {
+    font-size: 3em;
+    color: red;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.btn-edit {
+    font-size: 3em;
+    color: #fff;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.btn-edit:hover {
+    transform: scale(1.2);
+}
+
+.btn-delete:hover {
+    transform: scale(1.2);
+}
+
+.apply-changes-container{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-save {
+    margin-right: 14px;
+    background: transparent;
+    color: #81ff81;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.btn-reset {
+    color: #be0303;
+    background: transparent;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.btn-reset:hover {
+    transform: scale(1.2);
+}
+
+.btn-save:hover {
+    transform: scale(1.2);
+}
