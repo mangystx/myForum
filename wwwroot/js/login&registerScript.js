@@ -55,6 +55,11 @@ iconClose.addEventListener('click', () => {
 
 form.addEventListener('submit', async event => {
 	event.preventDefault();
+	const passwordInput = document.querySelector('input[name="password"]');
+	if (passwordInput.value.length < 8) {
+		alert('Password at least must be a 8 characters long');
+		return;
+	} 
 	const formData = new FormData(form);
 	const response = await fetch(form.action, {
 		method: 'POST',
@@ -92,7 +97,7 @@ document.addEventListener('click', async event => {
 });
 
 async function loadArticles() {
-	const response = await fetch('/GetArticles');
+	const response = await fetch('/get-articles');
 	const articles = await response.json();
 
 	const mainElement = document.querySelector('main');

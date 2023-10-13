@@ -112,7 +112,7 @@ app.MapGet("/logout", async context =>
     await context.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 });
 
-app.MapGet("/GetArticles", (MyForumDbContext dbContext) =>
+app.MapGet("/get-articles", (MyForumDbContext dbContext) =>
 {
     var articles = dbContext.Articles.Include(article => article.User).ToList();
     var articlePreviews = articles.Select(article => new
