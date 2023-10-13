@@ -6,6 +6,7 @@ const gateRight = document.getElementById('gate-right');
 const articleDataElement = document.getElementById('articleData');
 const articleDataScript = articleDataElement.textContent;
 let isEditMode = false;
+document.querySelector('.parallax').scrollIntoView({ behavior: 'smooth' });
 
 eval(articleDataScript);
 

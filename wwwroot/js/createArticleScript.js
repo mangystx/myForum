@@ -4,6 +4,7 @@ const treeRight = document.getElementById('tree-right');
 const gateLeft = document.getElementById('gate-left');
 const gateRight = document.getElementById('gate-right');
 const btnSave = document.querySelector(".btn-save");
+document.querySelector('.parallax').scrollIntoView({ behavior: 'smooth' });
 
 document.querySelector('.main-text').addEventListener('input', () =>{
     const mainText = document.getElementById('main-text').innerText;

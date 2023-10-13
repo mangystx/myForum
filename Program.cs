@@ -23,10 +23,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddAuthorization();
 builder.Services.AddDbContext<MyForumDbContext>(options =>
 {
-    var connectionString =
-        "Data Source=192.168.1.2,1433;Initial Catalog=MyForumDb;User Id=Andrey;Password=somePass;Integrated " +
-        "Security=False;Encrypt=False;TrustServerCertificate=False;Connection Timeout=30;";
-    options.UseSqlServer(connectionString);
+    var connectionString = "Server=localhost;Database=myForumDb;User=root;Password=xyvstc44pnb2;";
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 }, ServiceLifetime.Singleton);
 
 var app = builder.Build();
@@ -234,7 +232,7 @@ app.Run();
 
 string GetDescription(string text)
 {
-    int index = 0, words = 20;
+    int index = 0, words = 25;
     for (int i = 0; i < text.Length; i++)
     {
         if (char.IsWhiteSpace(text[i]))

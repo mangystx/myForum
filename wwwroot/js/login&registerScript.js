@@ -102,7 +102,8 @@ async function loadArticles() {
 		articlePreview.classList.add('article-preview');
 		articlePreview.innerHTML = `
             <h3>${article.title}</h3>
-            <p>${article.description}</p>
+            <p>${article.description.replaceAll("@@@", "<br>")
+			.replaceAll("@@", " ")}...</p>
         `;
 		mainElement.appendChild(articlePreview);
 		articlePreview.addEventListener('click', async () => {
